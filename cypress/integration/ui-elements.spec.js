@@ -55,7 +55,8 @@ describe('UI Element from automation-practice site', () => {
             cy.get('#autocomplete').as('dynamicDropdown');
             cy.get('@dynamicDropdown').type('can');
 
-            cy.get('.ui-menu-item > .ui-menu-item-wrapper')
+            // cy.get('.ui-menu-item > .ui-menu-item-wrapper')
+            cy.get('.ui-menu-item-wrapper')
                 .each(($country, index, $list) => {
                     if ($country.text() === 'Canada') {
                         $country.click();
