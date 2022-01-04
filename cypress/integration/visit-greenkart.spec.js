@@ -22,7 +22,13 @@ describe('Browsing GreenKart website', () => {
             if (itemName.includes(itemToAdd)) {
                 // $product.find('button').click();
                 $product.find('.product-action > button').click();
+                expect($product.find('.added').text()).equal('✔ ADDED');
             }
+        });
+
+        // Promise
+        cy.get('.brand').then($logo =>{
+            cy.log($logo.text());
         });
     });
 });
