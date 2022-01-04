@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.2.0"
+    "@testing-library/cypress": "^8.0.2",
+    "cypress": "^9.2.0",
+    "eslint": "^8.6.0",
+    "eslint-plugin-cypress": "^2.12.1"
   }
 }
