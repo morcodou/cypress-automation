@@ -69,7 +69,7 @@ describe('Shop Products', () => {
             .as('purchase');
 
         cy.get('@purchase').click();
-        cy.get('.alert')
+        cy.get('.alert.alert-success.alert-dismissible')
             .should('be.visible')
             .and('contain', 'Success! Thank you! Your order will be delivered in next few weeks :-).');
     });
