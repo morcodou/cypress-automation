@@ -1,8 +1,9 @@
 {
-    "baseUrl": "https://rahulshettyacademy.com",
-    "defaultCommandTimeout": 6000,
-    "pageLoadTimeout": 100000,
-    "env" :{
-        "currentUser":"username@email.com"
-    }
+  "baseUrl": "https://rahulshettyacademy.com",
+  "defaultCommandTimeout": 6000,
+  "pageLoadTimeout": 100000,
+  "env": {
+    "currentUser": "username@email.com"
+  },
+  "projectId": "str4dh"
 }
