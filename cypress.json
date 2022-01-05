@@ -5,5 +5,7 @@
   "env": {
     "currentUser": "username@email.com"
   },
-  "projectId": "str4dh"
+  "projectId": "str4dh",
+  "reporter": "mochawesome",
+  "video": false
 }
