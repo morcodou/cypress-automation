@@ -1,16 +1,15 @@
 /// <reference types="cypress" />
 
-describe('Checkout from angular practice website', () => {
+describe('Register User', () => {
 
     let userFixture;
 
     beforeEach('', () => {
-
         cy.fixture('user').then(user => userFixture = user);
         cy.visit('/angularpractice/');
     })
 
-    it('should checkout on submit', () => {
+    it('should submit user informations', () => {
 
         cy.get('input[name="name"]').as('username');
 
