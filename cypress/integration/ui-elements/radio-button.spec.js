@@ -21,5 +21,10 @@ describe('[Radio Button]', () => {
 
         cy.get('input[value="radio3"]')
             .should('not.be.checked');
+
+        cy.log(Cypress.env('currentUser'));
+
+        // env from commandline :
+        // cypress run --env currentUser=mycurrent-user@email.com
     });
 });
