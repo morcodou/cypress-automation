@@ -52,12 +52,28 @@ describe('Shop Products', () => {
 
         cy.get('@checkoutlink').click();
 
+        // cy.get('tr td:nth-child(4) strong').should('have.length', 2);
+        cy.get('tr > td:nth-child(4) > strong').as('productprice');
+        let totalPrice = 0;
+        cy.get('@productprice')
+            .should('have.length', 2)
+            .each(($price, $index, $list) => {
+                const values = $price.text().trim().split(' ');
+                const price = +values[values.length - 1];
+                totalPrice = totalPrice + price;
+            })
+            .then(() => cy.get('h3 > strong')
+                .should('have.text', `₹. ${totalPrice}`)
+            );
+
         cy.get('.btn')
             .contains('Checkout').as('checkoutbtn');
         cy.get('@checkoutbtn').click();
 
         cy.get('.checkbox').as('iagree');
         cy.get('@iagree').click();
+
+        // Cypress.config('defaultCommandTimeout', 8000);
 
         cy.get('#country').type('Mon');
         cy.get('.suggestions')
