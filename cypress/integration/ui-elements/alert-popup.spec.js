@@ -13,18 +13,22 @@ describe('[Alert Popup]', () => {
     })
 
     it('should open alert popup', () => {
+        cy.get('#alertbtn').click();
+
         cy.on("window:alert", (str) => {
             //window:alert is the event which get fired on alert open
             expect(str).to.equal('Hello , share this practice page and share your knowledge');
-            cy.get('#alertbtn').click();
+            // cy.get('#alertbtn').click();
         });
     });
 
     it('should confirm popup', () => {
+        cy.get('#confirmbtn').click();
+
         cy.on("window:confirm", (str) => {
             //window:confirm is the event which get fired on confirm open
             expect(str).to.equal('Hello , Are you sure you want to confirm?');
-            cy.get('#confirmbtn').click();
+            // cy.get('#confirmbtn').click();
         });
     });
 
