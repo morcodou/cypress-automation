@@ -7,5 +7,6 @@
   },
   "projectId": "str4dh",
   "reporter": "mochawesome",
-  "video": false
+  "video": false,
+  "testFiles": ["**/*.feature", "**/*.spec.js"] 
 }
