@@ -8,5 +8,5 @@
   "projectId": "str4dh",
   "reporter": "mochawesome",
   "video": false,
-  "testFiles": ["**/*.feature", "**/*.spec.js"] 
+  "testFiles": "**/*.{feature,features}"
 }

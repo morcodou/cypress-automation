@@ -1,0 +1,163 @@
+[
+  {
+    "description": "    Feature Description",
+    "keyword": "Feature",
+    "name": "Purchase products",
+    "line": 1,
+    "id": "purchase-products",
+    "tags": [],
+    "uri": "ecommerce.feature",
+    "elements": [
+      {
+        "id": "purchase-products;ecommerce-products-delivery",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "ecommerce products delivery",
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open ecommerce page",
+            "result": {
+              "status": "passed",
+              "duration": 4093000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I add item to cart",
+            "result": {
+              "status": "passed",
+              "duration": 2090000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Validate the total of price",
+            "result": {
+              "status": "passed",
+              "duration": 45000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Select the contry submit and verify Thank you message",
+            "result": {
+              "status": "passed",
+              "duration": 5942000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "purchase-products;filling-the-form",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Filling the form",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I open ecommerce page",
+            "result": {
+              "status": "passed",
+              "duration": 1209000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "gender",
+                      "email",
+                      "password",
+                      "birthday"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "JeanneDbb",
+                      "Female",
+                      "jeanne-bdd@email.com",
+                      "PassonMeDbb",
+                      "2002-12-11"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I fill the form details",
+            "result": {
+              "status": "passed",
+              "duration": 1650000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "birthday"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "JeanneDbb",
+                      "2002-12-11"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Validate the form fields",
+            "result": {
+              "status": "passed",
+              "duration": 99000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Submit and verify Thank you message",
+            "result": {
+              "status": "passed",
+              "duration": 136000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
